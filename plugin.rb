@@ -9,7 +9,7 @@ after_initialize do
   class ::Post
     module ExcerptForTopicPoemame
       def excerpt_for_topic
-        Post.excerpt(cooked, 500, {keep_newlines: true, strip_links: true})
+        Post.excerpt(cooked, 500, keep_newlines: true, strip_links: true)
       end
     end
     prepend ExcerptForTopicPoemame
