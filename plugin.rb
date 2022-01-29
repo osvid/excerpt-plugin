@@ -14,3 +14,4 @@ after_initialize do
     end
     prepend ExcerptForTopicPoemame
   end
+end
